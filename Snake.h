@@ -12,14 +12,22 @@ struct Point
 class CONRAN
 {
 public:
-    Point A[100];
+    static constexpr int SO_DOT_TOI_DA = 100;
+
+    Point A[SO_DOT_TOI_DA];
     int DoDai;
 
     CONRAN();
 
-    void Ve();
+    void Ve() const;
     void DiChuyen(int Huong);
-    void AnMoi(Food food);
+    bool AnMoi(Food &food);
+    bool ChamTuong() const;
+    bool CanThan() const;
+    bool ChiemViTri(int x, int y) const;
+
+private:
+    Point DuoiCu;
 };
 
 #endif

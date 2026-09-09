@@ -8,6 +8,6 @@ struct Food
 };
 
 void TaoMoi(Food &food);
-void VeMoi(Food food);
+void VeMoi(const Food &food);
 
 #endif

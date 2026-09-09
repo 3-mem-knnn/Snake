@@ -4,11 +4,6 @@
 
 using namespace std;
 
-#define MINX 2
-#define MAXX 35
-#define MINY 2
-#define MAXY 20
-
 void VeKhung()
 {
     for(int x=MINX;x<=MAXX;x++)
